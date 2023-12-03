@@ -11,6 +11,7 @@ type CardsProps = {
 };
 const Cards = ({ cardsData }: { cardsData: CardsProps }) => {
   const { color1, color2 } = cardsData;
+  const gradient = `bg-gradient-to-r from-[${color1}] to-[${color2}]`;
   const cards = cardsData.cards;
   console.log(cards);
   return (
@@ -41,7 +42,9 @@ const Cards = ({ cardsData }: { cardsData: CardsProps }) => {
               </div>
               <div className="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
                 <div className="flex items-center justify-end">
-                  <button className="mx-auto lg:mx-0 hover:underline bg-gradient-to-r from-[#8a4baf] to-[#d53f8c] text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                  <button
+                    className={`mx-auto lg:mx-0 hover:underline ${gradient} text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out`}
+                  >
                     Action
                   </button>
                 </div>
