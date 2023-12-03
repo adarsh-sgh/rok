@@ -1,15 +1,5 @@
-type SingleCard = {
-  title: string;
-  description: string;
-  action: string;
-  actionLink?: string;
-};
-type CardsProps = {
-  color1: string;
-  color2: string;
-  cards: SingleCard[];
-};
-const Cards = ({ cardsData }: { cardsData: CardsProps }) => {
+import { Tenant } from "../types/data.ts/data";
+const Cards = ({ cardsData }: { cardsData: Tenant }) => {
   const { color1, color2 } = cardsData;
   const gradient = `bg-gradient-to-r from-[${color1}] to-[${color2}]`;
   const cards = cardsData.cards;

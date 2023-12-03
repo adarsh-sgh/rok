@@ -4,8 +4,7 @@ type HeroProps = {
 };
 export default function Hero({ heroData }: { heroData: HeroProps }) {
   const { color1, color2 } = heroData;
-  // const gradient = `linear-gradient(90deg, ${color1} 0%, ${color2} 100%)`;
-  //  in tailwind
+
   const gradient = `bg-gradient-to-r from-[${color1}] to-[${color2}]`;
   return (
     <div className={gradient}>
