@@ -6,7 +6,7 @@ const data: Tenants = {
     cards: [
       {
         title: "Title 1",
-        description: "Description 1",
+        description: "Description 1 ",
         action: "Action 1",
         actionLink: "/",
       },

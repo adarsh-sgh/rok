@@ -13,7 +13,6 @@ export default function Page({ params }: { params: { domain: string } }) {
   const { color1, color2 } = cardsData;
   return (
     <div>
-      <h1>Welcome to the {domain}</h1>
       <Hero heroData={{ color1, color2 }} />
       <Cards cardsData={cardsData} />
       <Footer />

@@ -9,7 +9,6 @@ const Footer = () => {
               href="#"
               className="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
             >
-              {/* Icon from: http://www.potlabicons.com/ */}
               <svg
                 className="h-8 fill-current inline"
                 xmlns="http://www.w3.org/2000/svg"
